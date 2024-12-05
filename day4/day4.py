@@ -22,7 +22,7 @@ def p1(parsed_input):
     count = 0
     # Normal
     count = count + find_horizontal(parsed_input)
-    
+
     # Rotated 90
     rotated90 = ["".join(l) for l in list(zip(*parsed_input[::-1]))]
     count = count + find_horizontal(rotated90)
@@ -64,16 +64,16 @@ def p1(parsed_input):
 patterns = [
     [["M", "S"],
      ["M", "S"]],
-    
+
     [["M", "M"],
      ["S", "S"]],
-    
+
     [["S", "M"],
      ["S", "M"]],
-    
+
     [["S", "S"],
      ["M", "M"]],
- 
+
 ]
 
 
@@ -102,9 +102,9 @@ def p2(parsed_input):
 def main():
     parsed_input = parse("day4/example.txt")
     r1 = p1(parsed_input)
-    assert r1 == example_r1, f"Failed p1 example, Got {r1} expeced {example_r1}"
+    assert r1 == example_r1, f"Failed p1 example, Got {r1} expected {example_r1}"
     r2 = p2(parsed_input)
-    assert r2 == example_r2, f"Failed p2 example, Got {r2} expeced {example_r2}"
+    assert r2 == example_r2, f"Failed p2 example, Got {r2} expected {example_r2}"
     parsed_input = parse("day4/input.txt")
     r1 = p1(parsed_input)
     print(f"part 1: {r1}")

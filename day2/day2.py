@@ -29,7 +29,7 @@ def p1(reports):
             count=count+1
     return count
 
-def p2(reports):    
+def p2(reports):
     count = 0
     for report in reports:
         if issafe(report):
@@ -44,9 +44,9 @@ def p2(reports):
 def main():
     reports = parse("day2/example.txt")
     r1 = p1(reports)
-    assert r1 == example_r1, f"Failed p1 example, Got {r1} expeced {example_r1}"
+    assert r1 == example_r1, f"Failed p1 example, Got {r1} expected {example_r1}"
     r2 = p2(reports)
-    assert r2 == example_r2, f"Failed p2 example, Got {r2} expeced {example_r2}"
+    assert r2 == example_r2, f"Failed p2 example, Got {r2} expected {example_r2}"
     reports = parse("day2/input.txt")
     r1 = p1(reports)
     print(f"part 1: {r1}")

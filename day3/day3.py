@@ -39,10 +39,10 @@ def p2(memory):
 def main():
     parsed_input = parse("day3/example.txt")
     r1 = p1(parsed_input)
-    assert r1 == example_r1, f"Failed p1 example, Got {r1} expeced {example_r1}"
+    assert r1 == example_r1, f"Failed p1 example, Got {r1} expected {example_r1}"
     parsed_input = parse("day3/example2.txt")
     r2 = p2(parsed_input)
-    assert r2 == example_r2, f"Failed p2 example, Got {r2} expeced {example_r2}"
+    assert r2 == example_r2, f"Failed p2 example, Got {r2} expected {example_r2}"
     parsed_input = parse("day3/input.txt")
     r1 = p1(parsed_input)
     print(f"part 1: {r1}")
